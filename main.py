@@ -6,9 +6,7 @@ bot = ""
 score1 = 0
 score2 = 0
 possible = ["rock", "paper", "scissors"]
-#replay = "y"
 
-#while replay == "y":
 #Chooses your and the bots actions
 play = input("Rock, paper, or scissors? ")
 bot = possible[random.randint(0, 2)]
@@ -20,7 +18,6 @@ if play == "rock" and bot == "scissors" or play == "paper" and bot == "rock" or 
   print("Congratulations, you won!")
   print("You: " + str(score1))
   print("Computer: " + str(score2))
-  #reply = input("would you like to play again?: ")
   
   #If you lose
 if bot == "rock" and play == "scissors" or bot == "paper" and play == "rock" or bot == "scissors" and play == "paper":
@@ -29,7 +26,6 @@ if bot == "rock" and play == "scissors" or bot == "paper" and play == "rock" or 
   print("Sorry, you lost :(")
   print("You: " + str(score1))
   print("Computer: " + str(score2))
-  #reply = input("would you like to play again?: ")
 
 #If you tie
 if bot == play:
